@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha512-u7ppO4TLg4v6EY8yQ6T6d66inT0daGyTodAi6ycbw9+/AU8KMLAF7Z7YGKPMRA96v7t+c7O1s6YCTGkok6p9ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+</head>
+<body>
+    <div class="main">
+        <img src="images/Travel Recommendation System.png">    
+        <div class="nav">
+            <button class="menu_button" id="menu_button" onclick="myFunction()"><i class="fas fa-ellipsis-v" onclick="myFunction()"></i></button>
+            <nav id="menu">
+              <div>
+                <a  class="menu_items" style="margin-top:4.3vw"><i class="fas fa-info-circle i"></i>About Us</a>
+                <a  class="menu_items"><i class="fas fa-user-cog"></i>User Guide</a>
+                <a  class="menu_items"><i class="fas fa-question-circle i"></i>Help</a>
+            </div>
+            </nav>
+        </div>
+        <h1>Welcome to Travel Recommendation System</h1>
+        <h3>by Travel Buddy</h3>
+        <button class="button1">Sign Up</button>
+        <button class="button2">Sign In</button>
+        <div class="icons">
+          Meet us on :
+          <a ><i class="fab fa-google-plus"></i></a>
+          <a ><i class="fab fa-facebook"></i></a>
+          <a ><i class="fab fa-twitter"></i><a>
+        </div>
+    </div>
+</body>
+
+<script>
+function myFunction() {
+  document.getElementById("menu").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('#menu_button')) {
+  var myDropdown = document.getElementById("menu");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+</script>
+</html>
